@@ -1,0 +1,25 @@
+{
+  "name": "frontend-node-app",
+  "version": "1.0.0",
+  "description": "framework Angular par la création d'un site e-commerce (2021)",
+  "main": "index.html",
+  "scripts": {
+    "start": "run-script-os",
+    "start:linux:darwin": "concurrently \"node ./node_modules/.bin/http-server -a localhost -p 9595\"  \"sleep 1 && open http://localhost:9595\"",
+    "start:win32": "node node_modules/live-server/live-server --port=9595",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AKPOLI Espero",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "http-server": "^0.12.3",
+    "live-server": "^1.2.1",
+    "run-script-os": "^1.1.5"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "full",
+    "stack"
+  ]
+}
